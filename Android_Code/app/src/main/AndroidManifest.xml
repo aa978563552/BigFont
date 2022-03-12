@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chenchen.book">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        >
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent" android:name=".TransparentActivity">
+        </activity>
+        <activity android:name=".AActivity">
+        </activity>
+        <activity android:name=".BActivity">
+        </activity>
+        <activity android:name=".ShopListActivity">
+
+        </activity>
+        <activity android:name=".ShopCarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShopDetailActivity">
+
+        </activity>
+        <activity android:name=".RelativeLayoutActivity">
+
+        </activity>
+        <activity android:name=".LinearLayoutActivity">
+
+        </activity>
+        <activity android:name=".ImageViewActivity">
+
+        </activity>
+    </application>
+
+
+    <!-- 开启网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
+    <!-- 允许访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- 允许访问wifi状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 允许修改网络状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE">
+    </uses-permission>
+
+    <!-- 允许修改wifi状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+</manifest>

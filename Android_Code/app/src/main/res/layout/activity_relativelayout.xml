@@ -1,0 +1,155 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".RelativeLayoutActivity">-->
+
+<!--<View android:layout_height="100dp"-->
+    <!--android:background="#ff0000"-->
+    <!--android:layout_width="30dp">-->
+<!--</View>-->
+
+<!--</RelativeLayout>-->
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--&lt;!&ndash; 左上角显示 &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="Default也是Left"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"/>-->
+    <!--&lt;!&ndash; 右上角显示 &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="Right"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"/>-->
+    <!--&lt;!&ndash; 左下角显示 &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="Bottom也是Left|Bottom"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"/>-->
+    <!--&lt;!&ndash; 右下角显示 &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="Right|Bottom"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"/>-->
+<!--</RelativeLayout>-->
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="centerInParent"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="centerHorizontal"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="alignParentBottom"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="centerVertical"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="alignParentRight"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ff0000"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"/>-->
+
+<!--</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/base"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="center"
+        android:textSize="32sp"
+        android:background="#ff0000"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="alignTop"
+        android:gravity="center"
+        android:background="#ff00ff"
+        android:layout_alignTop="@id/base"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="alignBottom"
+        android:background="#ff00ff"
+        android:layout_alignBottom="@id/base"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="alignLeft"
+        android:gravity="center"
+        android:background="#ff00ff"
+        android:layout_alignLeft="@id/base"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="alignRight"
+        android:gravity="center"
+        android:background="#ff00ff"
+        android:layout_alignRight="@id/base"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="alignBaseline"
+        android:gravity="center"
+        android:background="#ff00ff"
+        android:layout_alignBaseline="@id/base"/>
+
+</RelativeLayout>

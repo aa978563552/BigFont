@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_border_1dp"
+    android:layout_height="50dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/RelativeLayout_item"
+    android:orientation="horizontal">
+<ImageView
+    android:layout_height="29dp"
+    android:layout_width="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_alignParentLeft="true"
+    android:src="@mipmap/nav_menu"/>
+<TextView
+    android:layout_height="29dp"
+    android:layout_width="150dp"
+    android:text="Mcare"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:layout_centerInParent="true" />
+<ImageView
+    android:layout_height="29dp"
+    android:layout_width="30dp"
+    android:layout_marginRight="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="right"
+    android:src="@mipmap/nav_go"/>
+</RelativeLayout>
